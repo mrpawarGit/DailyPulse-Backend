@@ -2,25 +2,6 @@
 
 A robust RESTful API backend for the DailyPulse habit tracking application. Built with Node.js, Express, MongoDB, and JWT authentication, this API provides comprehensive endpoints for user management, habit tracking, mood logging, and analytics.
 
-## 📋 Table of Contents
-
-* [Features](#Features)
-* [Tech Stack](#tech-stack)
-* [Prerequisites](#prerequisites)
-* [Installation](#installation)
-* [Configuration](#configuration)
-* [Running the Application](#running-the-application)
-* [API Documentation](#api-documentation)
-* [Database Schema](#database-schema)
-* [Project Structure](#project-structure)
-* [Security](#security)
-* [Testing](#testing)
-* [Deployment](#deployment)
-* [Contributing](#contributing)
-* [Authors](#authors)
-* [Acknowledgments](#acknowledgments)
-* [Roadmap](#roadmap)
-
 ## ✨ Features
 
 ### Core Functionality
