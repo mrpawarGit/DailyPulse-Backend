@@ -1,4 +1,6 @@
+// controllers/habitController.js
 const Habit = require("../models/Habit");
+const HabitLog = require("../models/HabitLog");
 
 // @desc    Get all habits for logged-in user
 // @route   GET /api/habits
@@ -117,11 +119,19 @@ const deleteHabit = async (req, res, next) => {
       return res.status(404).json({ message: "Habit not found" });
     }
 
+    // Delete habit
     await habit.deleteOne();
+
+    // Optional: Delete all associated logs
+    await HabitLog.deleteMany({
+      habitId: req.params.id,
+      userId: req.user._id,
+    });
 
     res.json({
       success: true,
-      message: "Habit deleted successfully",
+      message: "Habit and associated logs deleted successfully",
+      data: { id: req.params.id },
     });
   } catch (error) {
     next(error);
