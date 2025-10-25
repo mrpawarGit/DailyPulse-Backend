@@ -549,41 +549,6 @@ curl -X POST http://localhost:3000/api/auth/login \
 
 4. **Deploy** and get your API URL
 
-### Deploy to Heroku
-
-```
-# Login to Heroku
-heroku login
-
-# Create app
-heroku create dailypulse-api
-
-# Set environment variables
-heroku config:set MONGODB_URI=<your_uri>
-heroku config:set JWT_SECRET=<your_secret>
-heroku config:set NODE_ENV=production
-
-# Deploy
-git push heroku main
-```
-
-### Deploy to Railway
-
-1. Visit [railway.app](https://railway.app)
-2. Import from GitHub
-3. Add environment variables
-4. Deploy automatically
-
-## 🤝 Contributing
-
-Contributions are welcome! Please follow these steps:
-
-1. Fork the repository
-2. Create a feature branch: `git checkout -b feature/amazing-feature`
-3. Commit your changes: `git commit -m 'Add amazing feature'`
-4. Push to the branch: `git push origin feature/amazing-feature`
-5. Open a Pull Request
-
 ### Coding Standards
 
 - Use ES6+ features
@@ -594,11 +559,9 @@ Contributions are welcome! Please follow these steps:
 
 ## 👥 Authors
 
-**Mayur**
-- GitHub: [@mrpawarGit](https://github.com/mrpawarGit)
+**Mayur** - [@mrpawarGit](https://github.com/mrpawarGit)
 
-**Akash**
-- GitHub: [@Akashpandit01](https://github.com/Akashpandit01)
+**Akash** - [@Akashpandit01](https://github.com/Akashpandit01)
 
 
 ## 🙏 Acknowledgments
