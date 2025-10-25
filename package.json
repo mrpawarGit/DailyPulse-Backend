@@ -1,0 +1,27 @@
+{
+  "name": "dailypulse-backend",
+  "version": "1.0.0",
+  "description": "DailyPulse – keeps a pulse on your daily habits and mood.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrpawarGit/DailyPulse-Backend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/mrpawarGit/DailyPulse-Backend/issues"
+  },
+  "homepage": "https://github.com/mrpawarGit/DailyPulse-Backend#readme",
+  "dependencies": {
+    "express": "^5.1.0",
+    "nodemon": "^3.1.10"
+  }
+}
