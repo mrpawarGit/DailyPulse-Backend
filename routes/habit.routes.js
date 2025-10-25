@@ -1,3 +1,4 @@
+// routes/habit.routes.js
 const express = require("express");
 const { body } = require("express-validator");
 const {
@@ -28,7 +29,7 @@ router.use(protect);
 
 router.route("/").get(getHabits).post(habitValidation, validate, createHabit);
 
-router.route("/:id").get(getHabit).put(updateHabit).delete(deleteHabit);
+router.route("/:id").get(getHabit).put(updateHabit).delete(deleteHabit); // DELETE route is here
 
 router.patch("/:id/archive", toggleArchive);
 
