@@ -29,13 +29,21 @@ app.use(
   cors({
     origin: process.env.CORS_ORIGIN || "http://localhost:5000",
     credentials: true,
-  })
+  }),
 );
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(morgan("dev"));
 
 // Health check endpoint
+app.get("/", (req, res) => {
+  res.json({
+    status: "OK",
+    message: "DailyPulse API is running",
+    timestamp: new Date().toISOString(),
+  });
+});
+
 app.get("/api/health", (req, res) => {
   res.json({
     status: "OK",
